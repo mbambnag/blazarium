@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/blazarium_bg.qm</file>
+        <file alias="de">locale/blazarium_de.qm</file>
+        <file alias="en">locale/blazarium_en.qm</file>
+        <file alias="es">locale/blazarium_es.qm</file>
+        <file alias="fi">locale/blazarium_fi.qm</file>
+        <file alias="fr">locale/blazarium_fr.qm</file>
+        <file alias="it">locale/blazarium_it.qm</file>
+        <file alias="ja">locale/blazarium_ja.qm</file>
+        <file alias="pl">locale/blazarium_pl.qm</file>
+        <file alias="pt">locale/blazarium_pt.qm</file>
+        <file alias="ru">locale/blazarium_ru.qm</file>
+        <file alias="sk">locale/blazarium_sk.qm</file>
+        <file alias="sv">locale/blazarium_sv.qm</file>
+        <file alias="vi">locale/blazarium_vi.qm</file>
+        <file alias="zh_CN">locale/blazarium_zh_CN.qm</file>
+        <file alias="zh_TW">locale/blazarium_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+[Unit]
+Description=BZM's distributed currency daemon
+After=network.target
+
+[Service]
+User=blazarium
+Group=blazarium
+
+Type=forking
+PIDFile=/var/lib/blazariumd/blazariumd.pid
+
+ExecStart=/usr/bin/blazariumd -daemon -pid=/var/lib/blazariumd/blazariumd.pid \
+          -conf=/etc/blazarium/blazarium.conf -datadir=/var/lib/blazariumd
+
+ExecStop=-/usr/bin/blazarium-cli -conf=/etc/blazarium/blazarium.conf \
+         -datadir=/var/lib/blazariumd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
